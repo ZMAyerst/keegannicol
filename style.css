@@ -1,0 +1,1512 @@
+body,
+html {
+	font-family: 'Quicksand', sans-serif;
+	margin: 0;
+	padding: 0;
+	
+}
+
+/*All content except the footer*/
+
+.bodycontent {
+	padding: 10px;
+}
+
+/*List Items in Navbar*/
+
+li {
+	list-style: none;
+}
+
+/*Link tags in Navbar*/
+
+a {
+	text-decoration: none;
+}
+
+/*Removing preset padding from the Unordered List*/
+
+ul {
+	padding: 0px
+}
+
+/*Sizes everything as a border-box*/
+
+* {
+	box-sizing: border-box;
+}
+
+/*Navbar Content*/
+
+.navbar {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding-top: 5px;
+	height: 60px;
+	opacity: 1;
+	background-color: rgb(255, 255, 255);
+	z-index: 1;
+}
+
+/*hamburger menu hidden when on desktop*/
+
+.hamburger {
+	display: none;
+	padding-left: 0.7rem;
+}
+
+/*hamburger menu*/
+
+.bar {
+	display: block;
+	width: 25px;
+	height: 3px;
+	margin: 5px auto;
+	margin-left: 5px;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	background-color: #000000;
+}
+
+/*items on navbar*/
+
+.nav-menu {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20rem;
+}
+
+/*change navbar link colors*/
+
+.nav-link {
+	font-size: 1rem;
+	width: 2rem;
+	height: 2rem;
+	color: rgb(0, 0, 0);
+	letter-spacing: 5px;
+}
+
+/*change navbar link when hovering*/
+
+.nav-link:hover {
+	color: #5c5c5c;
+}
+
+/*Hero Image(background Picture on front page)*/
+
+.hero {
+	position: relative;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(images/elephant_herd.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/*Hero Text(Text on front page*/
+
+.hero-content {
+	position: relative;
+	text-align: right;
+}
+
+.hero-title span {
+	font-size: 5rem;
+	color: white;
+	background-color: rgb(0, 0, 0, .2);
+}
+
+.hero-subtitle span {
+	font-size: 2rem;
+	color: white;
+	background-color: rgb(0, 0, 0, .2);
+}
+
+/*Styling the about setion*/
+
+.about-section {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-top: 10px;
+	padding: 50px 0px;
+}
+
+/*Image of Keegan*/
+.imageme{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 30px;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	width: 25%;
+
+}
+.container {
+	padding: 2px 16px;
+  }
+
+.me {
+	width: 80%;
+	border-radius: 5px;
+}
+
+/*This sizes the two items in the about secrion (the image and text box*/
+
+.about-item {
+	width: 60%;
+	
+}
+.me-header{
+	font-family: 'Grape Nuts', cursive; 
+	font-size: 3rem;
+	margin: 0 ;
+}
+
+/*Styling the about Text*/
+
+.about-text {
+	margin: auto;
+	width: 80%;
+	padding: 50px;
+	padding-top: 30px;
+	font-size: 1.1rem;
+}
+
+/*Styling the horizontal line*/
+
+hr {
+	background-color: rgb(0, 0, 0, .1);
+	height: 1px;
+	border: none;
+}
+
+/*Portfolio Section*/
+
+#portfolio {
+	padding: 0px;
+}
+
+/*Styling the portfolio section*/
+
+.portfolio {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 10px;
+	grid-auto-rows: minmax(100px, auto);
+}
+
+/*These are the portfolio image measurements*/
+
+.one {
+	background-image: url("images/baby_elephant.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 1;
+	grid-row: span 3;
+}
+
+.two {
+	background-image: url("images/elephant_eye.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 3;
+	grid-row: span 6;
+}
+
+.three {
+	background-image: url("images/elephant_potrait.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 1;
+	grid-row: span 3;
+}
+
+.four {
+	background-image: url("images/portrait1.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 1;
+	grid-row: span 5;
+}
+
+.five {
+	background-image: url("images/portrait2.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 1;
+	grid-row: span 5;
+}
+
+.six {
+	background-image: url("images/shoes.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 1;
+	grid-row: span 5;
+}
+
+.seven {
+	background-image: url("images/shoes2.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 4;
+	grid-row: span 5;
+}
+
+.eight {
+	background-image: url("images/airplane_wing.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 2;
+	grid-row: span 5;
+}
+
+.nine {
+	background-image: url("images/canal.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 1;
+	grid-row: span 5;
+}
+
+.ten {
+	background-image: url("images/british_flag.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 4;
+	grid-row: span 5;
+}
+
+.eleven {
+	background-image: url("images/chinese_lanterns.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 2;
+	grid-row: span 4;
+}
+
+.twelve {
+	background-image: url("images/chinese_lanterns2.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: span 1;
+	grid-row: span 4;
+}
+
+.thirteen {
+	background-image: url("images/pizzeria.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 4;
+	grid-row: span 2;
+}
+
+.fourteen {
+	background-image: url("images/vegetable_stall.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 4;
+	grid-row: span 2;
+}
+
+.fifthteen {
+	background-image: url("images/redcar2.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 1;
+	grid-row: span 4;
+}
+
+.sixteen {
+	background-image: url("images/redcar3.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 2;
+	grid-row: span 4;
+}
+
+.seventeen {
+	background-image: url("images/redcar1.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 3/5;
+	grid-row: span 4;
+}
+
+.eighteen {
+	background-image: url("images/newspaperonfire.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 1/3;
+	grid-row: span 4;
+}
+
+.nineteen {
+	background-image: url("images/portrait3.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 3;
+	grid-row: span 4;
+}
+
+.twenty {
+	background-image: url("images/portrait4.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 4/5;
+	grid-row: span 2;
+}
+
+.twentyone {
+	background-image: url("images/portrait5.jpg");
+	background-position: center;
+	background-size: cover;
+	grid-column: 4/5;
+	grid-row: span 2;
+}
+
+/*Contact Section*/
+
+.form-section {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content: center;
+	height: 100%;
+	background-color: rgb(23, 23, 23);
+	color: white;
+}
+
+/*Contact Form*/
+
+form {
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	margin-top: 5rem;
+
+}
+
+/*Styling the input tags*/
+
+input {
+	width: 25rem;
+	height: 2rem;
+	border: none;
+	outline: none;
+	border-radius: 0.5rem;
+}
+
+/*Styling the Text Area*/
+
+textarea {
+	width: 25rem;
+	border: 2px solid black;
+	outline: none;
+	border-radius: 0.5rem;
+}
+
+/*Styling the labels*/
+
+label {
+	padding: 1rem 0;
+}
+
+/*Styling the Submit Button*/
+
+.submit {
+	border: none;
+	margin-top: 1rem;
+	width: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.submit:hover{
+    transform: scale(1.1);
+}
+
+/*Styling the Form text*/
+
+.form-heading {
+	font-size: 5rem;
+	margin: 0;
+}
+
+.contact-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-subtext {
+	font-size: 1.5rem;
+	padding-left: 5px;
+}
+.name{
+	font-family: 'Grape Nuts', cursive;
+	font-size: 2rem;
+	margin: 0;
+	padding: 10px;
+}
+
+/*Footer Section*/
+
+footer {
+	height: auto;
+	background-color: rgb(23, 23, 23)
+}
+
+.footer-content {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	flex-direction: column;
+	font-size: 12px;
+	color: white;
+	padding: 0;
+}
+
+/*Styling the a tag in the footer*/
+
+a {
+	color: white;
+}
+@media screen and (max-width: 1400px){
+	.portfolio {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+		grid-auto-rows: minmax(100px, auto);
+	}
+	.one {
+		background-image: url("images/baby_elephant.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.two {
+		background-image: url("images/elephant_eye.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 3;
+		grid-row: span 6;
+	}
+	.three {
+		background-image: url("images/elephant_potrait.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.four {
+		background-image: url("images/portrait1.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.five {
+		background-image: url("images/portrait2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.six {
+		background-image: url("images/shoes.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.seven {
+		background-image: url("images/shoes2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 6;
+	}
+	.eight {
+		background-image: url("images/airplane_wing.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 2;
+		grid-row: span 6;
+	}
+	.nine {
+		background-image: url("images/canal.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.ten {
+		background-image: url("images/british_flag.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 6;
+	}
+	.eleven {
+		background-image: url("images/chinese_lanterns.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 2;
+		grid-row: span 4;
+	}
+	.twelve {
+		background-image: url("images/chinese_lanterns2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 4;
+	}
+	.thirteen {
+		background-image: url("images/pizzeria.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 2;
+	}
+	.fourteen {
+		background-image: url("images/vegetable_stall.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 2;
+	}
+	.fifthteen {
+		background-image: url("images/redcar2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 1;
+		grid-row: span 4;
+	}
+	.sixteen {
+		background-image: url("images/redcar3.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 2;
+		grid-row: span 4;
+	}
+	.seventeen {
+		background-image: url("images/redcar1.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 3/5;
+		grid-row: span 4;
+	}
+	.eighteen {
+		background-image: url("images/newspaperonfire.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 1/3;
+		grid-row: span 4;
+	}
+	.nineteen {
+		background-image: url("images/portrait3.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 3;
+		grid-row: span 4;
+	}
+	.twenty {
+		background-image: url("images/portrait4.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4/5;
+		grid-row: span 2;
+	}
+	.twentyone {
+		background-image: url("images/portrait5.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4/5;
+		grid-row: span 2;
+	}
+	.me-header{
+		font-size: 3rem;
+	}
+}
+@media screen and (min-width: 1024px) and (max-width: 1300px) {
+	.portfolio {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+		grid-auto-rows: minmax(100px, auto);
+	}
+	.one {
+		background-image: url("images/baby_elephant.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.two {
+		background-image: url("images/elephant_eye.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 3;
+		grid-row: span 6;
+	}
+	.three {
+		background-image: url("images/elephant_potrait.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.four {
+		background-image: url("images/portrait1.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.five {
+		background-image: url("images/portrait2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.six {
+		background-image: url("images/shoes.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.seven {
+		background-image: url("images/shoes2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 6;
+	}
+	.eight {
+		background-image: url("images/airplane_wing.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 2;
+		grid-row: span 6;
+	}
+	.nine {
+		background-image: url("images/canal.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.ten {
+		background-image: url("images/british_flag.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 6;
+	}
+	.eleven {
+		background-image: url("images/chinese_lanterns.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 2;
+		grid-row: span 4;
+	}
+	.twelve {
+		background-image: url("images/chinese_lanterns2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 4;
+	}
+	.thirteen {
+		background-image: url("images/pizzeria.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 2;
+	}
+	.fourteen {
+		background-image: url("images/vegetable_stall.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 2;
+	}
+	.fifthteen {
+		background-image: url("images/redcar2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 1;
+		grid-row: span 4;
+	}
+	.sixteen {
+		background-image: url("images/redcar3.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 2;
+		grid-row: span 4;
+	}
+	.seventeen {
+		background-image: url("images/redcar1.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 3/5;
+		grid-row: span 4;
+	}
+	.eighteen {
+		background-image: url("images/newspaperonfire.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 1/3;
+		grid-row: span 4;
+	}
+	.nineteen {
+		background-image: url("images/portrait3.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 3;
+		grid-row: span 4;
+	}
+	.twenty {
+		background-image: url("images/portrait4.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4/5;
+		grid-row: span 2;
+	}
+	.twentyone {
+		background-image: url("images/portrait5.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4/5;
+		grid-row: span 2;
+	}
+	.about-text {
+		margin: auto;
+		width: 80%;
+		font-size: 0.87rem;
+	}
+}
+
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+	.portfolio {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+		grid-auto-rows: minmax(100px, auto);
+	}
+	.nav-menu {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10rem;
+	}
+	.one {
+		background-image: url("images/baby_elephant.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.two {
+		background-image: url("images/elephant_eye.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 3;
+		grid-row: span 6;
+	}
+	.three {
+		background-image: url("images/elephant_potrait.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.four {
+		background-image: url("images/portrait1.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.five {
+		background-image: url("images/portrait2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.six {
+		background-image: url("images/shoes.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.seven {
+		background-image: url("images/shoes2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 6;
+	}
+	.eight {
+		background-image: url("images/airplane_wing.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 2;
+		grid-row: span 6;
+	}
+	.nine {
+		background-image: url("images/canal.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 6;
+	}
+	.ten {
+		background-image: url("images/british_flag.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 6;
+	}
+	.eleven {
+		background-image: url("images/chinese_lanterns.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 2;
+		grid-row: span 4;
+	}
+	.twelve {
+		background-image: url("images/chinese_lanterns2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 4;
+	}
+	.thirteen {
+		background-image: url("images/pizzeria.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 2;
+	}
+	.fourteen {
+		background-image: url("images/vegetable_stall.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 2;
+	}
+	.fifthteen {
+		background-image: url("images/redcar2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 1;
+		grid-row: span 4;
+	}
+	.sixteen {
+		background-image: url("images/redcar3.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 2;
+		grid-row: span 4;
+	}
+	.seventeen {
+		background-image: url("images/redcar1.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 3/5;
+		grid-row: span 4;
+	}
+	.eighteen {
+		background-image: url("images/newspaperonfire.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 1/3;
+		grid-row: span 4;
+	}
+	.nineteen {
+		background-image: url("images/portrait3.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 3;
+		grid-row: span 4;
+	}
+	.twenty {
+		background-image: url("images/portrait4.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4/5;
+		grid-row: span 2;
+	}
+	.twentyone {
+		background-image: url("images/portrait5.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4/5;
+		grid-row: span 2;
+	}
+	.about-text {
+		margin: auto;
+		width: 80%;
+		font-size: 0.8rem;
+	}
+	.name{
+		font-size: 1.2rem;
+	}
+	.imageme{
+		padding: 10px;
+	}
+}
+
+
+@media screen and (min-width: 601px) and (max-width:900px) {
+	/*Navbar Section*/
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: rgb(255, 255, 255);
+		height: 50px;
+	}
+	.nav-menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		left: -100%;
+		top: 0rem;
+		flex-direction: column;
+		background-color: rgb(255, 255, 255);
+		width: 100%;
+		border-radius: 10px;
+		transition: 0.3s;
+		box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+		gap: 0rem;
+	}
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	.nav-menu.active {
+		left: 0;
+	}
+	.nav-item {
+		padding: 2rem 0 2rem 0;
+		margin-left: 1;
+	}
+	.nav-link {
+		color: rgb(0, 0, 0);
+	}
+	.hamburger {
+		display: block;
+		cursor: pointer;
+		padding-left: 5px;
+	}
+	.hero-content {
+		position: relative;
+		text-align: center;
+	}
+	.hero-title span {
+		font-size: 3rem;
+		color: white;
+		background-color: rgb(0, 0, 0, .2);
+	}
+	.hero-subtitle span {
+		font-size: 1.2rem;
+		color: white;
+		background-color: rgb(0, 0, 0, .2);
+	}
+	/*Styling the portfolio section*/
+	.portfolio {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		gap: 10px;
+		grid-auto-rows: minmax(50px, auto);
+	}
+	/*These are the portfolio image measurements*/
+	.one {
+		background-image: url("images/baby_elephant.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.two {
+		background-image: url("images/elephant_eye.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 3;
+		grid-row: span 6;
+	}
+	.three {
+		background-image: url("images/elephant_potrait.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.four {
+		background-image: url("images/portrait1.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 5;
+	}
+	.five {
+		background-image: url("images/portrait2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 5;
+	}
+	.six {
+		background-image: url("images/shoes.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 5;
+	}
+	.seven {
+		background-image: url("images/shoes2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 5;
+	}
+	.eight {
+		background-image: url("images/airplane_wing.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 2;
+		grid-row: span 5;
+	}
+	.nine {
+		background-image: url("images/canal.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 5;
+	}
+	.ten {
+		background-image: url("images/british_flag.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 5;
+	}
+	.eleven {
+		background-image: url("images/chinese_lanterns.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 2;
+		grid-row: span 4;
+	}
+	.twelve {
+		background-image: url("images/chinese_lanterns2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: span 1;
+		grid-row: span 4;
+	}
+	.thirteen {
+		background-image: url("images/pizzeria.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 2;
+	}
+	.fourteen {
+		background-image: url("images/vegetable_stall.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4;
+		grid-row: span 2;
+	}
+	.fifthteen {
+		background-image: url("images/redcar2.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 1;
+		grid-row: span 4;
+	}
+	.sixteen {
+		background-image: url("images/redcar3.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 2;
+		grid-row: span 4;
+	}
+	.seventeen {
+		background-image: url("images/redcar1.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 3/5;
+		grid-row: span 4;
+	}
+	.eighteen {
+		background-image: url("images/newspaperonfire.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 1/3;
+		grid-row: span 4;
+	}
+	.nineteen {
+		background-image: url("images/portrait3.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 3;
+		grid-row: span 4;
+	}
+	.twenty {
+		background-image: url("images/portrait4.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4/5;
+		grid-row: span 2;
+	}
+	.twentyone {
+		background-image: url("images/portrait5.jpg");
+		background-position: center;
+		background-size: cover;
+		grid-column: 4/5;
+		grid-row: span 2;
+	}
+	.about-section {
+		display: flex;
+		align-content: center;
+		margin-top: 10px;
+		padding: 50px 0px;
+	}
+	/*Image of Keegan*/
+	.me {
+		width: 100%;
+	}
+	/*This sizes the two items in the about secrion (the image and text box*/
+	/*Contact Section*/
+	.form-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		height: 100%;
+	}
+	/*Contact Form*/
+	form {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+	}
+	/*Styling the input tags*/
+	input {
+		width: 25rem;
+		height: 2rem;
+		border: none;
+		border-bottom: 2px solid black;
+		outline: none;
+	}
+	/*Styling the Text Area*/
+	textarea {
+		width: 25rem;
+		border: 2px solid black;
+		outline: none;
+	}
+	/*Styling the labels*/
+	label {
+		padding: 0.5rem 0;
+	}
+	/*Styling the Submit Button*/
+	.submit {
+		border: none;
+		margin-top: 1rem;
+		width: 50%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	/*Styling the Form text*/
+	.form-heading {
+		font-size: 3rem;
+		margin-top: 3rem;
+	}
+	.contact-text {
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-subtext {
+		font-size: 1.5rem;
+		padding-left: 5px;
+	}
+	.portfolio {
+		display: grid;
+	}
+	.about-text{
+		font-size: 1rem;
+		padding-top: 2rem;
+		padding: 2rem;
+		margin: 0;
+		width: 100%;
+	}
+	.imageme{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 30px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		width: 60%;
+	
+	}
+	.me-header{
+		font-family: 'Grape Nuts', cursive; 
+		font-size: 2rem;
+		margin: 0 ;
+	}
+	.about-item {
+		width: 100%;
+		
+	}
+	.name{
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	/*Navbar Section*/
+	.navbar {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: rgb(255, 255, 255);
+		height: 50px;
+	}
+	.nav-menu {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		position: fixed;
+		left: -100%;
+		top: 0rem;
+		flex-direction: column;
+		background-color: rgb(255, 255, 255);
+		width: 100%;
+		border-radius: 10px;
+		transition: 0.3s;
+		box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+		gap: 0rem;
+	}
+	.hamburger.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+	.hamburger.active .bar:nth-child(1) {
+		transform: translateY(8px) rotate(45deg);
+	}
+	.hamburger.active .bar:nth-child(3) {
+		transform: translateY(-8px) rotate(-45deg);
+	}
+	.nav-menu.active {
+		left: 0;
+	}
+	.nav-item {
+		padding: 2rem 0 2rem 0;
+		margin-left: 1;
+	}
+	.nav-link {
+		color: rgb(0, 0, 0);
+	}
+	.hamburger {
+		display: block;
+		cursor: pointer;
+		padding-left: 5px;
+	}
+	.hero-content {
+		position: relative;
+		text-align: center;
+	}
+	.hero-title span {
+		font-size: 3rem;
+		color: white;
+		background-color: rgb(0, 0, 0, .2);
+	}
+	.hero-subtitle span {
+		font-size: 1.2rem;
+		color: white;
+		background-color: rgb(0, 0, 0, .2);
+	}
+	/*Styling the portfolio section*/
+	.portfolio {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		gap: 10px;
+		grid-auto-rows: minmax(100px, auto);
+	}
+	.one,
+	.two .three,
+	.four,
+	.five,
+	.six,
+	.seven,
+	.eight,
+	.nine,
+	.ten,
+	.eleven,
+	.twelve,
+	.thirteen,
+	.fourteen,
+	.fifthteen,
+	.sixteen,
+	.seventeen,
+	.eighteen,
+	.nineteen,
+	.twenty,
+	.twentyone {
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.two,
+	.seven,
+	.eight,
+	.nine,
+	.ten,
+	.twelve,
+	.fifthteen,
+	.eighteen,
+	.nineteen {
+		grid-column: span 1;
+		grid-row: span 3;
+	}
+	.four,
+	.five,
+	.six,
+	.seven,
+	.nine,
+	.ten,
+	.twelve,
+	.fifthteen,
+	.sixteen,
+	.nineteen {
+		grid-column: span 1;
+		grid-row: span 7;
+	}
+	.about-section {
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		margin-top: 10px;
+		padding: 20px 0px;
+	}
+	/*Image of Keegan*/
+	.me {
+		width: 100%;
+	}
+	/*This sizes the two items in the about secrion (the image and text box*/
+	.about-item {
+		width: 100%;
+	}
+	/*Contact Section*/
+	.form-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		align-content: center;
+		padding: 0;
+	}
+	/*Contact Form*/
+	form {
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		padding: 0;
+	}
+	/*Styling the input tags*/
+	input {
+		width: 18rem;
+		height: 2rem;
+		border: none;
+		border-bottom: 2px solid black;
+		outline: none;
+	}
+	/*Styling the Text Area*/
+	textarea {
+		width: 100%;
+		border: 2px solid black;
+		outline: none;
+	}
+	/*Styling the labels*/
+	label {
+		padding: 0.5rem 0;
+	}
+	/*Styling the Submit Button*/
+	.submit {
+		border: none;
+		margin-top: 1rem;
+	}
+	/*Styling the Form text*/
+	.form-heading {
+		font-size: 3rem;
+		margin-top: 5rem;
+	}
+	.contact-text {
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-subtext {
+		font-size: 1.5rem;
+		padding-left: 5px;
+	}
+	.portfolio {
+		display: grid;
+	}
+	.about-section{
+		padding: 10px;
+	}
+	.about-text{
+		font-size: 1rem;
+		padding: 0.5rem;
+		padding-top: 4rem;
+	}
+	.imageme{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 10px;
+		box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+		width: 100%;
+	
+	}
+	.me-header{
+		font-family: 'Grape Nuts', cursive; 
+		font-size: 2rem;
+		margin: 0 ;
+	}
+}
